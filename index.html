@@ -41,11 +41,11 @@
             </a>
             <nav class="menuTop">
                 <ul>
-                    <li class="active "><a href="#">Главная</a></li>
-                    <li class=" "><a href="#">О нас</a></li>
-                    <li class=" "><a href="#">Цены</a></li>
-                    <li class=" "><a href="#">Преимущества покупки</a></li>
-                    <li class=" "><a href="#">Контакты</a></li>
+                    <li class="active "><a href="#main">Главная</a></li>
+                    <li class=" "><a href="#main">О нас</a></li>
+                    <li class=" "><a href="#price">Цены</a></li>
+                    <li class=" "><a href="#blocks">Преимущества покупки</a></li>
+                    <li class=" "><a href="#footer_consultation">Контакты</a></li>
                 </ul>
             </nav>
         </div>
@@ -83,11 +83,11 @@
     <div class="mobile-menu_scroll">
         <nav class="nav-menu">
             <ul>
-                <li class="active "><a href="#">Главная</a></li>
-                <li class=" "><a href="#">О нас</a></li>
-                <li class=" "><a href="#">Цены</a></li>
-                <li class=" "><a href="#">Преимущества покупки</a></li>
-                <li class=" "><a href="#">Контакты</a></li>
+                <li class="active "><a href="#main">Главная</a></li>
+                <li class=" "><a href="#main">О нас</a></li>
+                <li class=" "><a href="#price">Цены</a></li>
+                <li class=" "><a href="#blocks">Преимущества покупки</a></li>
+                <li class=" "><a href="#footer_consultation">Контакты</a></li>
             </ul>
         </nav>
         <button class="boxHeader_button buttonGradient-2 hoverGradient f_none" data-remodal-target="consultation">
@@ -95,7 +95,7 @@
         </button>
     </div>
 </div>
-<main>
+<main id="main">
     <div class="swiper sliderTop">
         <div class="swiper-wrapper">
             <div class="swiper-slide">
@@ -115,17 +115,17 @@
                             Полное сопровождение на всех этапах продажи/покупки<br/>
                             Оставьте заявку или звоните для получения консультации
                         </p>
-                        <a class="sliderTop_link buttonGradient hoverGradient" href="#footer_consultation">Получить
+                        <a class="sliderTop_link buttonGradient hoverGradient" href="#footer_consultation" id="price">Получить
                             консультацию</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="homeCategory flex j-c_center f_wrap" data-aos="fade-up">
+    <div class="homeCategory flex j-c_center f_wrap" data-aos="fade-up" >
         <div class="homeCategory_li">
 
-            <a class="homeCategory_link" href="#">
+            <a class="homeCategory_link">
                 <span class="homeCategory_thumb img-position"><img alt="" class="lazy"
                                                                    data-src="img/1.png" height="100%" src="img/reload_2.svg" title="1"
                                                                    width="100%"></span>
@@ -142,6 +142,7 @@
                 </div>
             </div>
         </div>
+
         <div class="homeCategory_li">
             <a class="homeCategory_link" href="#">
                 <span class="homeCategory_thumb img-position"><img alt="" class="lazy"
@@ -177,7 +178,7 @@
                             class="counter">1200000</span><span> </span>€</p>
                     <p class="listNumbers_quantity"><span class="counter">30</span> - <span class="counter">500</span> м<sup>2</sup>
                     </p>
-                    <p class="listNumbers_text">
+                    <p class="listNumbers_text" id="blocks">
                         Коммерческие помещения торговые площади с гарантией дохода на 12 лет
                         Бизнес помещения с арендатором
                         Недвижимость на этапе проекта
@@ -353,5 +354,17 @@
 <script id='intlTelInput-js' src='js/intlTelInput.js?ver=1.0.0' type='text/javascript'></script>
 <script id='hcSticky-js' src='js/hc-sticky.js?ver=1.0.0' type='text/javascript'></script>
 <script id='my_scripts-js' src='js/my_scripts.js?ver=1.0.0' type='text/javascript'></script>
+<script type="text/javascript">
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+
+</script>
 </body>
 </html>
