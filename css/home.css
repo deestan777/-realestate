@@ -1278,7 +1278,7 @@ body[data-aos-duration="400"] .newOffers .aos-animate.listOffers_li:nth-child(4n
 
 @media screen and (max-width: 799px) {
     .homeCategory_li {
-        width: 50%;
+        width: 100%;
     }
 }
 
