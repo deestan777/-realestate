@@ -1271,3 +1271,10 @@ header {
         padding: 17px 15px 0 15px !important;
     }
 }
+.about{
+    display:flex;
+    justify-content: space-around;
+}
+.man{
+    border:1px solid black;
+}
