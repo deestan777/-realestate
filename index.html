@@ -8,6 +8,8 @@
     <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
     <meta content='max-image-preview:large' name='robots'/>
+    <link href="" rel="alternate" title="invest &raquo; Лента комментариев к &laquo;Home page&raquo;"
+          type="application/rss+xml"/>
     <link href='css/style.css' id='style-css' media='all' rel='stylesheet' type='text/css'/>
     <link href='css/inner-page.css' id='inner_page-css' media='all' rel='stylesheet' type='text/css'/>
     <link href='css/remodal.css' id='remodal-css' media='all' rel='stylesheet' type='text/css'/>
@@ -21,14 +23,14 @@
     <meta content="" name="description">
     <meta name="viewport" content="width=device-width, user-scalable=no" />
     <link href="" rel="shortcut icon" type="image/png">
+    <link rel="stylesheet" href="css/hello.css">
 </head>
 <body class="flex f-d_column">
 <header>
     <div class="boxHeader width-1418 flex j-c_between pd-15" data-aos="fade-down" data-aos-delay="150">
         <div class="boxHeader_left flex a-i_center">
             <a class="boxLogo f_none" href="#">
-                <img alt="logo" class="lazyload" data-src="img/logo.png" height="100%"
-                     src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" title="logo"
+                <img alt="logo" class="lazyload" data-src="img/logo.png" height="100%" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" title="logo"
                      width="100%">
                 <noscript><img alt="logo" class="lazyload" data-src="img/logo.png" height="100%"
                                src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
@@ -82,11 +84,11 @@
     <div class="mobile-menu_scroll">
         <nav class="nav-menu">
             <ul>
-                <li class="active "><a href="#main">Главная</a></li>
-                <li class=" "><a href="#main">О нас</a></li>
-                <li class=" "><a href="#price">Цены</a></li>
-                <li class=" "><a href="#blocks">Преимущества покупки</a></li>
-                <li class=" "><a href="#footer_consultation">Контакты</a></li>
+                <li class="active "><a href="#main" class="mobile-menu_close">Главная</a></li>
+                <li class=" "><a href="#main" class="mobile-menu_close">О нас</a></li>
+                <li class=" "><a href="#price" class="mobile-menu_close">Цены</a></li>
+                <li class=" "><a href="#blocks" class="mobile-menu_close">Преимущества покупки</a></li>
+                <li class=" "><a href="#footer_consultation" class="mobile-menu_close">Контакты</a></li>
             </ul>
         </nav>
         <button class="boxHeader_button buttonGradient-2 hoverGradient f_none" data-remodal-target="consultation">
@@ -99,9 +101,9 @@
         <div class="swiper-wrapper">
             <div class="swiper-slide">
                 <picture class="sliderTop_thumb">
-                    <source data-srcset="img/Frame-6.png" media="(min-width: 640px)"/>
-                    <source data-srcset="img/image-50.png" media="(min-width: 280px)"/>
-                    <img alt="icons" class="swiper-lazy" data-src="img/Frame-6.png" height="100%" src="img/reload_2.svg"
+                    <source data-srcset="img/Frame-6.jpg" media="(min-width: 640px)"/>
+                    <source data-srcset="img/image-50.jpg" media="(min-width: 280px)"/>
+                    <img alt="icons" class="swiper-lazy" data-src="img/Frame-6.jpg" height="100%" src="img/reload_2.svg"
                          title="icons" width="100%">
                 </picture>
                 <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
@@ -109,8 +111,8 @@
                     <div class="sliderTop_width">
                         <h2 class="sliderTop_title">Продай в Киеве<br/>Купи в Турции</h2>
                         <p class="sliderTop_text">
-                            &#8226; Поможем Вам продать недвижимость в столице Украины и<br/>
-                            купить/проинвестировать в недвижимость Турции<br/>
+                            &#8226; Поможем Вам продать недвижимость в столице Украины и
+                        купить/проинвестировать в недвижимость Турции<br/>
                             &#8226; Полное сопровождение на всех этапах продажи/покупки<br/>
                             &#8226; Оставьте заявку или звоните для получения консультации
                         </p>
@@ -121,13 +123,12 @@
             </div>
         </div>
     </div>
-    <div class="homeCategory flex j-c_center f_wrap" data-aos="fade-up">
+    <div class="homeCategory flex j-c_center f_wrap" data-aos="fade-up" >
         <div class="homeCategory_li">
 
-            <a class="homeCategory_link" href="frame.html" target="_blank">
+            <a class="homeCategory_link" target="_blank" href="frame.html">
                 <span class="homeCategory_thumb img-position"><img alt="" class="lazy"
-                                                                   data-src="img/1.png" height="100%"
-                                                                   src="img/reload_2.svg" title="Квартиры"
+                                                                   data-src="img/a1.png" height="100%" src="img/reload_2.svg" title="Квартиры"
                                                                    width="100%"></span>
 
                 <p class="homeCategory_text flex a-i_center j-c_center buttonGradient">Квартиры</p>
@@ -136,7 +137,7 @@
                 <div class="listNumbers_center">
                     <p class="listNumbers_quantity"><span class="">65,000</span> - <span
                             class="">300,000</span><span> </span>€</p>
-                    <p class="listNumbers_quantity"><span class="counter">50</span> - <span class="counter">250</span> м<sup>2</sup>
+                    <p class="listNumbers_quantity"><span class="">50</span> - <span class="">250</span> м<sup>2</sup>
                     </p>
                     <p class="listNumbers_text">
                         - На этапе застройки <br/>
@@ -148,9 +149,9 @@
         </div>
 
         <div class="homeCategory_li">
-            <a class="homeCategory_link" href="frame.html" target="_blank">
+            <a class="homeCategory_link" target="_blank" href="frame.html">
                 <span class="homeCategory_thumb img-position"><img alt="" class="lazy"
-                                                                   data-src="img/3.jpg" height="100%"
+                                                                   data-src="img/a3.jpg" height="100%"
                                                                    src="img/reload_2.svg" title="Дома и виллы"
                                                                    width="100%"></span>
 
@@ -160,7 +161,7 @@
                 <div class="listNumbers_center">
                     <p class="listNumbers_quantity"><span class="">120,000</span> - <span
                             class="">5,000,000</span><span> </span>€</p>
-                    <p class="listNumbers_quantity"><span class="counter">150</span> - <span class="counter">900</span>
+                    <p class="listNumbers_quantity"><span class="">150</span> - <span class="">900</span>
                         м<sup>2</sup></p>
                     <p class="listNumbers_text">
                         В лучших районах Турции<br/>
@@ -172,9 +173,9 @@
             </div>
         </div>
         <div class="homeCategory_li">
-            <a class="homeCategory_link" href="frame.html" target="_blank">
+            <a class="homeCategory_link" target="_blank" href="frame.html">
                 <span class="homeCategory_thumb img-position"><img alt="" class="lazy"
-                                                                   data-src="img/2.jpg" height="100%"
+                                                                   data-src="img/a2.jpg" height="100%"
                                                                    src="img/reload_2.svg" title="Инвестиционные проекты"
                                                                    width="100%"></span>
 
@@ -184,7 +185,7 @@
                 <div class="listNumbers_center">
                     <p class="listNumbers_quantity"><span class="">90,000</span> - <span
                             class="">1,200,000</span><span> </span>€</p>
-                    <p class="listNumbers_quantity"><span class="counter">30</span> - <span class="counter">500</span> м<sup>2</sup>
+                    <p class="listNumbers_quantity"><span class="">30</span> - <span class="">500</span> м<sup>2</sup>
                     </p>
                     <p class="listNumbers_text" id="blocks">
                         -Коммерческие помещения с
@@ -198,7 +199,7 @@
     <div class="boxBenefits">
         <div class="boxBenefits_li flex j-c_between" data-aos="fade-up" data-aos-offset="0">
             <div class="boxBenefits_thumb"><img alt="" class="lazy"
-                                                data-src="img/11.png" height="100%"
+                                                data-src="img/11.jpg" height="100%"
                                                 src="img/reload_2.svg"
                                                 title="Выгодные условия" width="100%"></div>
             <div class="boxBenefits_right">
@@ -209,14 +210,14 @@
                     <li>Напрямую от застройщиков - БЕЗ комиссии</li>
                     <li>Без подтверждения доходов</li>
                     <li>Оплата наличными/безналичным платежом/криптовалютой</li>
-                    <li>Маленькие налоги %</li>
+                    <li>Низкие налоги</li>
                     <li>Организация тура или дистанционная покупка</li>
                 </ul>
             </div>
         </div>
         <div class="boxBenefits_li flex j-c_between" data-aos="fade-up" data-aos-offset="0">
             <div class="boxBenefits_thumb"><img alt="" class="lazy"
-                                                data-src="img/22.png"
+                                                data-src="img/22.jpg"
                                                 height="100%"
                                                 src="img/reload_2.svg"
                                                 title="ВНЖ и Гражданство за покупку" width="100%"></div>
@@ -225,10 +226,8 @@
                     <a href="#">ВНЖ и Гражданство за покупку</a>
                 </h3>
                 <ul class="boxBenefits_list">
-                    <li>При покупке недвижимости в Турции Вы<br/>
-                        можете получить ВНЖ на срок до 2 лет
-                    </li>
-                    <li>При покупке недвижимости от 400 тыс.<br/>Вы получаете гражданство</li>
+                    <li>Получение ВНЖ на срок до 2 лет при покупке недвижимости в Турции</li>
+                    <li>Получение гражданства при покупке недвижимости от 400 тыс. </li>
                     <li>Быстрая и упрощенная процедура</li>
                     <li>Помощь в оформлении документов</li>
 
@@ -237,7 +236,7 @@
         </div>
         <div class="boxBenefits_li flex j-c_between" data-aos="fade-up" data-aos-offset="0">
             <div class="boxBenefits_thumb"><img alt="" class="lazy"
-                                                data-src="img/33.png"
+                                                data-src="img/33.jpg"
                                                 height="100%"
                                                 src="img/reload_2.svg"
                                                 title="Доход от аренды" width="100%"></div>
@@ -247,8 +246,7 @@
                 </h3>
                 <ul class="boxBenefits_list">
                     <a>
-                        <li>Постоянный высокий спрос на аренду недвижимости</li>
-                    </a>
+                    <li>Постоянный высокий спрос на аренду недвижимости</li></a>
                     <li>Доход от аренды до 12% годовых</li>
                     <li>Комплексное управление недвижимостью "под ключ".</li>
                 </ul>
@@ -256,7 +254,7 @@
         </div>
         <div class="boxBenefits_li flex j-c_between" data-aos="fade-up" data-aos-offset="0">
             <div class="boxBenefits_thumb"><img alt="" class="lazy"
-                                                data-src="img/44.png"
+                                                data-src="img/44.jpg"
                                                 height="100%"
                                                 src="img/reload_2.svg"
                                                 title="Доход от перепродажи" width="100%"></div>
@@ -265,38 +263,164 @@
                     <a>Доход от перепродажи</a>
                 </h3>
                 <ul class="boxBenefits_list">
-                    <a id="footer_consultation">
-                        <li>Рост цен на недвижимость Турции за последний год составил 30%</li>
-                    </a>
+                    <li>Рост цен на недвижимость Турции за последний год составил 30%</li>
                     <li>Рост цен от "котлована" до завершения проекта - до 40%</li>
                     <li>Турция входит в ТОП 5 стран мира по количеству прямых иностранных инвестиций</li>
-                    <li>Рассрочка 0% до завершения строительства с первооооначальным взносом 30%</li>
+                    <li>Рассрочка 0% до завершения строительства с первоначальным взносом 30%</li>
                 </ul>
             </div>
         </div>
-
+     <a id="footer_consultation"></a>
     </div>
 </main>
+<!--
+<iframe src="komanda.html" width="100%" height="1400" scrolling="no"></iframe>
+-->
+
+
+<div class="main">
+    <div class="team-sec">
+        <div class="container mb-5">
+            <h1 class="title text-center text-lg-left">Команда</h1>
+            <div class="title text-center text-lg-left">
+                Отдел по работе с клиентами
+            </div>
+            <div class=" text-md-left" >
+                Более 10 лет наша команда профессионально работает в сфере недвижимости г.Киева и на рынке зарубежной недвижимости.
+                Мы партнеры АН SmartRealty.
+                Напрямую работаем с застройщиками Турции.
+                <br/>
+                Специалисты нашей команды являются членами Ассоциации специалистов по недвижимости Украины (АСНУ).
+                <br/><br/>
+                Специализируемся на следующих направлениях:<br/><br/>
+                - продажа/покупка/аренда жилой и коммерческой недвижимости в Киеве<br/>
+                - продажа/покупка недвижимости в Турции<br/>
+                - инвестиционные проекты
+                <br/><br/>
+                Мы уделяем особое внимание работе с инвесторами.<br/>
+                Учитывая большой спрос на приобретение объектов
+                недвижимости за границей, мы вместе с нашими
+                партнерами, запустили и ведём проект «Обмен недвижимости Киева на недвижимость в Турции».
+                <br/><br/>
+                Наша миссия заключается в развитии рынка украинской и зарубежной недвижимости.
+                Основная задача - профессиональная помощь клиентам с целью сохранения и преумножения капитала, обеспечение безопасности и надежности операций с объектами недвижимости Киева и зарубежья
+                <br/><br/><br/><br/>
+            </div>
+            <div class="review-wrap row justify-content-lg-between justify-content-center">
+
+
+                <div class="review-block col-lg-5 col-11 mb-5">
+                    <div class="row align-items-start">
+                        <div
+                                class="review-img col-auto mr-n6 mt-4 d-flex flex-column justify-content-end justify-content-lg-start mb-n4">
+                            <img alt="Foto"
+                                 class="rounded-circle" src="img/1.jpg">
+                        </div>
+                        <div class="review-desc col-lg rounded-0">
+                            <div class="name">Дмитрий Чинчик</div>
+                            <div class="about"></div>
+                            <ul class="list-unstyled">
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="review-block col-lg-5 col-11 mb-5">
+                    <div class="row align-items-start">
+                        <div
+                                class="review-img col-auto mr-n6 mt-4 d-flex flex-column justify-content-end justify-content-lg-start mb-n4">
+                            <img alt="Foto"
+                                 class="rounded-circle" src="img/2.jpg">
+                        </div>
+                        <div class="review-desc col-lg rounded-0">
+                            <div class="name">Антон Головчанский</div>
+                            <div class="about"></div>
+                            <ul class="list-unstyled">
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="review-block col-lg-5 col-11 mb-5">
+                    <div class="row align-items-start">
+                        <div
+                                class="review-img col-auto mr-n6 mt-4 d-flex flex-column justify-content-end justify-content-lg-start mb-n4">
+                            <img alt="Foto"
+                                 class="rounded-circle" src="img/3.jpg">
+                        </div>
+                        <div class="review-desc col-lg rounded-0">
+                            <div class="name">Андрей Шокал</div>
+                            <div class="about"></div>
+                            <ul class="list-unstyled">
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="review-block col-lg-5 col-11 mb-5">
+                    <div class="row align-items-start">
+                        <div
+                                class="review-img col-auto mr-n6 mt-4 d-flex flex-column justify-content-end justify-content-lg-start mb-n4">
+                            <img alt="Foto"
+                                 class="rounded-circle" src="img/4.jpg">
+                        </div>
+                        <div class="review-desc col-lg rounded-0">
+                            <div class="name">Дьяченко Дмитрий</div>
+                            <div class="about"></div>
+                            <ul class="list-unstyled">
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="review-block col-lg-5 col-11 mb-5">
+                    <div class="row align-items-start">
+                        <div
+                                class="review-img col-auto mr-n6 mt-4 d-flex flex-column justify-content-end justify-content-lg-start mb-n4">
+                            <img alt="Foto"
+                                 class="rounded-circle" src="img/5.jpg" >
+                        </div>
+                        <div class="review-desc col-lg rounded-0">
+                            <div class="name">Виталий Шокал</div>
+                            <div class="about"></div>
+                            <ul class="list-unstyled">
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    </div>
+</div>
 <footer class="lazy" data-bg="">
-    <div class="boxFooter width-1418 rel">
+   
+    <div class="boxFooter width-1418 rel" >
         <div class="formCall callback_form">
-
             <h2 class="formCall_title titleGradient">Консультация по подбору недвижимости в Турции</h2>
-
+            <form autocomplete = "off" class = "form-element" id = "form-contact" method = "POST">
             <div class="formCall_item">
-                <input class="formCall_input" name="fio" placeholder="Ваше имя" type="text">
+                <input class="formCall_input" name = "name" placeholder="Ваше имя" type="text">
             </div>
             <div class="formCall_item">
-                <input class="formCall_input phoneInput phoneInput-2" name="telephone" type="tel" value="+380">
+                <input class="formCall_input phoneInput phoneInput-2" name = "phone" type="tel" value="+380">
             </div>
             <div class="formCall_item">
-                <input class="formCall_input" name="email" placeholder="E-mail" type="text">
-            </div>
-            <div class="formCall_item">
-                <input class="formCall_input" name="text" placeholder="Ваш вопрос" type="text">
+                <input class="formCall_input" name="theme" placeholder="Ваш вопрос" type="text">
             </div>
             <div class="recaptcha" id="footer_recaptcha" style="display: none"></div>
-            <button class="formCall_button buttonGradient-2 hoverGradient button_do">Получить консультацию</button>
+            <button class="formCall_button buttonGradient-2 hoverGradient button_do" type="submit">Получить консультацию</button>
+        </form>
         </div>
         <h2 class="boxFooter_title">ALANYA INVEST TURKISH ESTATE</h2>
         <div class="boxFooter_item flex j-c_between a-i_center">
@@ -311,33 +435,28 @@
                 <p class="boxFooter_text">
 
 
+
                 <div class="boxMessenger flex">
-                    <p class="boxFooter_text">
+                <p class="boxFooter_text">
 
 
-                        <i class="boxFooter_icons img-center">
-                            <svg height="14" width="12">
-                                <use xlink:href="img/sprite.svg#svg-telephone"></use>
-                            </svg>
-                        </i>
-                        <a href="tel:+380963936766" style="margin-right: 20px;">+380 96 393 67 66</a>
-
-                    </p>
-                    <span>   </span>
-                    <a href="viber://chat?number=+905521234567">
-                        <svg height="25" width="25">
-                            <use xlink:href="img/sprite.svg#svg-viber"></use>
+                    <i class="boxFooter_icons img-center">
+                        <svg height="14" width="12">
+                            <use xlink:href="img/sprite.svg#svg-telephone"></use>
                         </svg>
+                    </i>
+                    <a href="tel:+380963936766" style="margin-right: 20px;">+380 96 393 67 66</a>
+
+                </p>
+<span>   </span>
+                    <a href="viber://chat?number=+905521234567">
+                        <svg width="25" height="25"><use xlink:href="img/sprite.svg#svg-viber"></use></svg>
                     </a>
                     <a href="https://t.me/+905521234567">
-                        <svg height="25" width="25">
-                            <use xlink:href="img/sprite.svg#svg-telegram"></use>
-                        </svg>
+                        <svg width="25" height="25"><use xlink:href="img/sprite.svg#svg-telegram"></use></svg>
                     </a>
                     <a href="whatsapp://send?phone=+905521234567">
-                        <svg height="25" width="25">
-                            <use xlink:href="img/sprite.svg#svg-whatsapp"></use>
-                        </svg>
+                        <svg width="25" height="25"><use xlink:href="img/sprite.svg#svg-whatsapp"></use></svg>
                     </a>
                 </div>
                 </p>
@@ -368,33 +487,28 @@
                 <p class="boxFooter_text">
 
 
+
                 <div class="boxMessenger flex">
-                    <p class="boxFooter_text">
+                <p class="boxFooter_text">
 
 
-                        <i class="boxFooter_icons img-center">
-                            <svg height="14" width="12">
-                                <use xlink:href="img/sprite.svg#svg-telephone"></use>
-                            </svg>
-                        </i>
-                        <a href="tel:+380963936766" style="margin-right: 20px;">+380 96 393 67 66</a>
-
-                    </p>
-                    <span>   </span>
-                    <a href="viber://chat?number=+905521234567">
-                        <svg height="25" width="25">
-                            <use xlink:href="img/sprite.svg#svg-viber"></use>
+                    <i class="boxFooter_icons img-center">
+                        <svg height="14" width="12">
+                            <use xlink:href="img/sprite.svg#svg-telephone"></use>
                         </svg>
+                    </i>
+                    <a href="tel:+380963936766" style="margin-right: 20px;">+380 96 393 67 66</a>
+
+                </p>
+<span>   </span>
+                    <a href="viber://chat?number=+905521234567">
+                        <svg width="25" height="25"><use xlink:href="img/sprite.svg#svg-viber"></use></svg>
                     </a>
                     <a href="https://t.me/+905521234567">
-                        <svg height="25" width="25">
-                            <use xlink:href="img/sprite.svg#svg-telegram"></use>
-                        </svg>
+                        <svg width="25" height="25"><use xlink:href="img/sprite.svg#svg-telegram"></use></svg>
                     </a>
                     <a href="whatsapp://send?phone=+905521234567">
-                        <svg height="25" width="25">
-                            <use xlink:href="img/sprite.svg#svg-whatsapp"></use>
-                        </svg>
+                        <svg width="25" height="25"><use xlink:href="img/sprite.svg#svg-whatsapp"></use></svg>
                     </a>
                 </div>
                 </p>
@@ -429,22 +543,23 @@
             <use xlink:href="img/sprite.svg#svg-close_2"></use>
         </svg>
     </button>
+    
+        
     <div class="titleH2">Консультация по подбору недвижимости в Турции</div>
     <div class="formRemodal callback_form">
+        <form autocomplete = "off" class = "form-element" id = "form-contact1" method = "POST">
         <div class="formCall_item">
-            <input class="formCall_input" name="fio" placeholder="Ваше имя" type="text">
+            <input class="formCall_input" name="name" placeholder="Ваше имя" type="text">
         </div>
         <div class="formCall_item">
-            <input class="formCall_input phoneInput phoneInput-3" name="telephone" type="tel" value="+380">
+            <input class="formCall_input phoneInput phoneInput-3" name="phone" type="text" value="+380">
         </div>
         <div class="formCall_item">
-            <input class="formCall_input" name="email" placeholder="E-mail" type="text">
-        </div>
-        <div class="formCall_item">
-            <input class="formCall_input" name="text" placeholder="Ваш вопрос" type="text">
+            <input class="formCall_input" name="theme" placeholder="Ваш вопрос" type="text">
         </div>
         <div class="recaptcha" id="modal_recaptcha" style="display: none"></div>
-        <button class="formCall_button buttonGradient-2 hoverGradient button_do">Получить консультацию</button>
+        <button class="formCall_button buttonGradient-2 hoverGradient button_do" type="submit">Получить консультацию</button>
+        </form>
     </div>
 </div>
 <!-- -->
@@ -459,6 +574,7 @@
     <button class="remodal-button buttonGradient hoverGradient" data-remodal-action="close">OK</button>
 </div>
 <!-- END Модальные окна -->
+
 
 
 <script id='smush-lazy-load-js' src='js/smush-lazy-load.min.js?ver=3.10.2' type='text/javascript'></script>
@@ -476,6 +592,7 @@
 <script id='intlTelInput-js' src='js/intlTelInput.js?ver=1.0.0' type='text/javascript'></script>
 <script id='hcSticky-js' src='js/hc-sticky.js?ver=1.0.0' type='text/javascript'></script>
 <script id='my_scripts-js' src='js/my_scripts.js?ver=1.0.0' type='text/javascript'></script>
+<script src = "js/telegramform.js"></script>
 <script type="text/javascript">
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {

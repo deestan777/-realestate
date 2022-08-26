@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="111px" height="119px" viewBox="0 0 111 119" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>Rectangle 8 Copy</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <radialGradient cx="89.5189833%" cy="15.3847042%" fx="89.5189833%" fy="15.3847042%" r="62.656708%" id="radialGradient-1">
+            <stop stop-color="#000000" offset="0%"></stop>
+            <stop stop-color="#000000" stop-opacity="0" offset="100%"></stop>
+        </radialGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.086107337">
+        <g id="Main-01" transform="translate(-77.000000, -1842.000000)" fill="url(#radialGradient-1)">
+            <path d="M36,1842 L88,1842 L88,1842 C143.228475,1842 188,1886.77153 188,1942 L188,1994 L36,1994 L36,1842 Z" id="Rectangle-8-Copy"></path>
+        </g>
+    </g>
+</svg>
