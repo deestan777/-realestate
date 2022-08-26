@@ -1278,3 +1278,43 @@ header {
 .man{
     border:1px solid black;
 }
+.text__wrap{
+    display: flex;
+    flex-direction: column;
+
+}
+.text__wrap--block{
+    max-width: 150px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    box-shadow: 14px 10px 40px rgb(0 0 0 / 40%) !important;
+
+}
+@media screen and (min-width: 640px) {
+    .text__wrap{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .text__wrap--block{
+        display: flex;
+        max-width: 150px;
+        margin-bottom: 0px;
+        padding: 10px;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 374px) {}
+
+@media screen and (max-width: 359px) {
+    .mobile-menu {
+        width: 100vw;
+        -webkit-transform: translate3d(-100vw, 0, 0);
+        transform: translate3d(-100vw, 0, 0);
+    }
+    .sliderTop_item.pd-15 {
+        padding: 17px 15px 0 15px !important;
+    }
+}
