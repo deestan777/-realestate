@@ -1301,7 +1301,6 @@ header {
         display: flex;
         max-width: 150px;
         margin-bottom: 0px;
-        padding: 10px;
         align-items: center;
     }
 }
