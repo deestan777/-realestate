@@ -23,9 +23,6 @@
     <meta content="" name="description">
     <meta content="width=device-width, user-scalable=no" name="viewport"/>
     <link href="" rel="shortcut icon" type="image/png">
-
-    <link href="css/timeline.css" rel="stylesheet">
-
 </head>
     <body class="flex f-d_column">
         <!-- HEADER -->
@@ -206,7 +203,6 @@
                 </div>
             </div>
             <div class="boxBenefits">
-
                 <div class="boxBenefits_li flex j-c_between" data-aos="fade-up" data-aos-offset="0">
                     <div class="boxBenefits_thumb"><img alt="" class="lazy"
                                                         data-src="img/11.jpg" height="100%"
@@ -240,6 +236,7 @@
                             <li>Получение гражданства при покупке недвижимости от 400 тыс.</li>
                             <li>Быстрая и упрощенная процедура</li>
                             <li>Помощь в оформлении документов</li>
+
                         </ul>
                     </div>
                 </div>
@@ -281,24 +278,10 @@
                     </div>
                 </div>
             </div>
+            <iframe class="locatie" src="about.html" frameborder="0" width="100%"></iframe>
 
-            <iframe class="locatie" src="responsive-timeline" style="border:0"  allowfullscreen></iframe>
-
-            <div class="homeVideo width-1418 pd-15 aos-init aos-animate" data-aos="fade-up" data-aos-offset="-200">
-                <h2 class="titleH2">Видео о нас</h2>
-                <div class="swiper sliderVideo swiper-initialized swiper-horizontal swiper-pointer-events" style=" display: flex; justify-content: center;">
-                        <div>
-                            <div class="sliderVideo_item">
-                                <div>
-                                    <iframe class="video-promo" src="https://www.youtube.com/embed/j4OUkbkty50" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-            </div>
         </main>
         <!-- /MAIN CONTENT -->
-
         <!-- FOOTER -->
         <footer class="lazy" data-bg="">
             <div class="boxFooter width-1418 rel">
@@ -331,12 +314,8 @@
                             </i> Турция, Alanya, Mahmutlar, Mahallesi, Barbaros Caddesi
                         </p>
                         <p class="boxFooter_text">
-
-
                         <div class="boxMessenger flex">
                             <p class="boxFooter_text">
-
-
                                 <i class="boxFooter_icons img-center">
                                     <svg height="14" width="12">
                                         <use xlink:href="img/sprite.svg#svg-telephone"></use>
@@ -436,7 +415,6 @@
             </div>
         </footer>
         <!-- /FOOTER -->
-
         <!-- Модальные окна -->
         <div class="remodal remodalCall" data-remodal-id="consultation">
             <button class="remodal-close" data-remodal-action="close">
@@ -476,7 +454,6 @@
             <button class="remodal-button buttonGradient hoverGradient" data-remodal-action="close">OK</button>
         </div>
         <!-- END Модальные окна -->
-
         <!-- SCRIPTS -->
         <div class="scripts">
         <script id='smush-lazy-load-js' src='js/smush-lazy-load.min.js?ver=3.10.2' type='text/javascript'></script>
@@ -495,37 +472,74 @@
         <script id='hcSticky-js' src='js/hc-sticky.js?ver=1.0.0' type='text/javascript'></script>
         <script id='my_scripts-js' src='js/my_scripts.js?ver=1.0.0' type='text/javascript'></script>
         <script src="js/telegramform.js"></script>
-        <script src="responsive-timeline/js/index.js"></script>
         <script type="text/javascript">
-            /* Check the location of each element */
-            $('.content').each( function(i){
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
 
-                var bottom_of_object= $(this).offset().top + $(this).outerHeight();
-                var bottom_of_window = $(window).height();
-
-                if( bottom_of_object > bottom_of_window){
-                    $(this).addClass('hidden');
-                }
-            });
-
-
-            $(window).scroll( function(){
-                /* Check the location of each element hidden */
-                $('.hidden').each( function(i){
-
-                    var bottom_of_object = $(this).offset().top + $(this).outerHeight();
-                    var bottom_of_window = $(window).scrollTop() + $(window).height();
-
-                    /* If the object is completely visible in the window, fadeIn it */
-                    if( bottom_of_window > bottom_of_object ){
-                        $(this).animate({'opacity':'1'},700);
-                    }
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
                 });
             });
+
         </script>
+        <script>
+                (function ($) {
+                    $(function () {
+                        $(window).on('scroll', function () {
+                            fnOnScroll();
+                        });
+                        $(window).on('resize', function () {
+                            fnOnResize();
+                        });
+                        let agTimeline = $('.js-timeline'),
+                            agTimelineLine = $('.js-timeline_line'),
+                            agTimelineLineProgress = $('.js-timeline_line-progress'),
+                            agTimelinePoint = $('.js-timeline-card_point-box'),
+                            agTimelineItem = $('.js-timeline_item'),
+                            agOuterHeight = $(window).outerHeight(),
+                            agHeight = $(window).height(),
+                            f = -1,
+                            agFlag = false;
+                        function fnOnScroll() {
+                            agPosY = $(window).scrollTop();
+
+                            fnUpdateFrame();
+                        }
+                        function fnOnResize() {
+                            agPosY = $(window).scrollTop();
+                            agHeight = $(window).height();
+                            fnUpdateFrame();
+                        }
+                        function fnUpdateWindow() {
+                            agFlag = false;
+                            agTimelineLine.css({
+                                top: agTimelineItem.first().find(agTimelinePoint).offset().top - agTimelineItem.first().offset().top,
+                                bottom: agTimeline.offset().top + agTimeline.outerHeight() - agTimelineItem.last().find(agTimelinePoint).offset().top
+                            });
+                            f !== agPosY && (f = agPosY, agHeight, fnUpdateProgress());
+                        }
+                        function fnUpdateProgress() {
+                            var agTop = agTimelineItem.last().find(agTimelinePoint).offset().top;
+                            i = agTop + agPosY - $(window).scrollTop();
+                            a = agTimelineLineProgress.offset().top + agPosY - $(window).scrollTop();
+                            n = agPosY - a + agOuterHeight / 2;
+                            i <= agPosY + agOuterHeight / 2 && (n = i - a);
+                            agTimelineLineProgress.css({height: n + "px"});
+                            agTimelineItem.each(function () {
+                                var agTop = $(this).find(agTimelinePoint).offset().top;
+                                (agTop + agPosY - $(window).scrollTop()) < agPosY + .5 * agOuterHeight ? $(this).addClass('js-ag-active') : $(this).removeClass('js-ag-active');
+                            })
+                        }
+                        function fnUpdateFrame() {
+                            agFlag || requestAnimationFrame(fnUpdateWindow);
+                            agFlag = true;
+                        }
+                    });
+                })(jQuery);
+    </script>
         </div>
         <!-- /SCRIPTS -->
-
     </body>
-
 </html>
