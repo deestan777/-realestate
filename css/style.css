@@ -1317,3 +1317,25 @@ header {
         padding: 17px 15px 0 15px !important;
     }
 }
+
+
+.locatie {
+    height: 2100px;
+    width:100%;
+}
+.video-promo {
+    width: 640px;
+    height: 365px;
+}
+
+@media(min-width:0px) and (max-width:768px) {
+
+    .locatie {
+        height: 3760px;
+    }
+    .video-promo {
+        width: 100%;
+        height: 240px;
+    }
+
+}
